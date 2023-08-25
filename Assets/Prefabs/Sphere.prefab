@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5994107304532483162}
   m_Layer: 3
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,9 +30,9 @@ Transform:
   m_GameObject: {fileID: 4091379071736495592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2643487, y: 0.40237224, z: 1.0600169}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -165,10 +165,10 @@ MonoBehaviour:
     onCompleted:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11500000, guid: 77e22a23c99e84a4e9703673fc7a1b24, type: 3}
-          m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_MethodName: set_name
-          m_Mode: 5
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: 
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -176,7 +176,7 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: GenerateShapes
             m_BoolArgument: 0
-          m_CallState: 0
+          m_CallState: 2
   currentRefractureCount: 0
 --- !u!114 &-5994107304532483162
 MonoBehaviour:
@@ -190,4 +190,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2b77f4156199b4184aa9595793096b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shapeGenerator: {fileID: 2969230026440895784, guid: 9104a8a2b57487a48ad581487bca3277, type: 3}

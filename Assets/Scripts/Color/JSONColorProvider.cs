@@ -5,7 +5,7 @@ public class JsonColorProvider
 {
   public static List<Color> LoadColorsFromJson()
   {
-    string path = Path.Combine(Application.streamingAssetsPath, "BulletColors.json");
+    string path = Path.Combine(Application.streamingAssetsPath, "Colors.json");
 
     if (File.Exists(path))
     {
